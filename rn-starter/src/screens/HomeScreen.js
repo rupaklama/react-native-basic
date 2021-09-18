@@ -24,6 +24,8 @@ const HomeScreen = ({ navigation }) => {
 
       <Button title='Go to Image Screen' onPress={() => navigation.navigate('Image')} />
 
+      <Button title='Go to Box Screen' onPress={() => navigation.navigate('Box')} />
+
       {/*  Not a self closing element, it detects a tab or press */}
       <TouchableOpacity onPress={() => navigation.navigate('List')}>
         {/* we can add multiple elements here like single clicking on image with text*/}

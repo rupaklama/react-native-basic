@@ -1,4 +1,3 @@
-
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
@@ -6,6 +5,7 @@ import ComponentsScreen from './src/screens/ComponentsScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
+import BoxScreen from './src/screens/layouts/BoxScreen';
 
 // creating Stack navigator object to create routes
 // This is also known as App Navigator to show different screens
@@ -16,7 +16,8 @@ const navigator = createStackNavigator(
     Home: HomeScreen,
     Components: ComponentsScreen,
     List: ListScreen,
-    Image: ImageScreen
+    Image: ImageScreen,
+    Box: BoxScreen,
   },
   {
     // as second arg, setting default route to show anytime app starts up
